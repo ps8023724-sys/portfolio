@@ -30,3 +30,18 @@ a:focus-visible, button:focus-visible {
 
 .section { padding: 70px 6%; }
 .section h2 { font-size: 2.2rem; margin: 0 0 20px; }
+.site-header { background: var(--green); padding: 18px 6%; }
+.logo { color: var(--cream); font: bold 1.3rem Georgia, serif; text-decoration: none; }
+
+.hero { background: var(--green); color: var(--cream); padding: 80px 6% 100px; }
+.eyebrow {
+  display: inline-block; background: var(--mustard); color: var(--black);
+  padding: 6px 14px; border-radius: 999px; font-weight: bold; font-size: 0.9rem; margin: 0 0 20px;
+}
+.hero h1 { font-size: clamp(2.6rem, 8vw, 5rem); margin: 0 0 20px; max-width: 14ch; }
+.intro { max-width: 55ch; margin: 0 0 30px; }
+.button {
+  display: inline-block; background: var(--mustard); color: var(--black);
+  font-weight: bold; padding: 14px 26px; border-radius: 999px; text-decoration: none;
+}
+.button:hover { background: var(--cream); }
