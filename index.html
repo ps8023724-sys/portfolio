@@ -3,78 +3,185 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shrestha Puja | Portfolio</title>
+  <meta name="description" content="Shrestha Puja — Computer Engineering student at Gachon University. Selected web projects, coursework, and learning journey.">
+  <meta name="theme-color" content="#f7f4fc">
+  <title>Shrestha Puja | Computer Engineering Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-   <header class="site-header">
-    <a class="logo" href="#top">Shrestha Puja</a>
-    <nav aria-label="Main">
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Shrestha Puja home">
+      <span class="brand-mark">P.</span><span>shrestha puja</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation">
+      <span></span><span></span>
+    </button>
+    <nav id="main-nav" class="main-nav" aria-label="Main navigation">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
+      <a href="#journey">Journey</a>
+      <a href="#contact" class="nav-contact">Let's connect <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
 
-  <main id="main-content">
-        <section class="hero" id="top" aria-labelledby="hero-title">
-      <p class="eyebrow">Computer Engineering Student</p>
-      <h1 id="hero-title">Hi, I'm Shrestha Puja.</h1>
-      <p class="intro">
-        I study computer engineering at Gachon University and I'm learning to
-        build websites that are fast, accessible, and easy to use.
-      </p>
-      <a class="button" href="#projects">See my projects</a>
-    </section>
-        <section class="section" id="about" aria-labelledby="about-title">
-      <h2 id="about-title">About me</h2>
-      <p class="text">
-        I'm Shrestha Puja, a computer engineering student at Gachon University.
-        This semester I started web programming, where I've built pages with
-        HTML, CSS and JavaScript, worked with web APIs, and learned to test
-        sites for accessibility and speed. I like building things that work
-        well for everyone.
-      </p>
+  <main id="main">
+    <section class="hero section-shell" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> COMPUTER ENGINEERING STUDENT · GACHON UNIVERSITY</p>
+        <h1>Curious mind.<br><span class="gradient-text">Thoughtful builder.</span></h1>
+        <p class="hero-lead">Hello, I'm <strong>Shrestha Puja</strong> — a Computer Engineering student learning to turn ideas into useful, accessible, and thoughtfully designed digital experiences.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
+          <a class="button button-quiet" href="#about">A little about me</a>
+        </div>
+        <div class="hero-meta">
+          <span><span class="meta-icon">⌘</span> Learning by building</span>
+          <span><span class="meta-icon">⌁</span> Web · APIs · UX</span>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Pixel-art avatar illustration">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="avatar-halo"></div>
+        <img class="avatar" src="assets/puja-avatar.jpg" alt="Pixel-art avatar chosen by Shrestha Puja">
+        <div class="floating-note note-top"><span class="note-spark">✦</span> always learning</div>
+        <div class="floating-note note-bottom"><span class="note-dot"></span> currently exploring JavaScript</div>
+        <span class="hero-star star-one">✳</span><span class="hero-star star-two">✧</span>
+      </div>
+      <a class="scroll-cue" href="#about" aria-label="Scroll to about section"><span></span> SCROLL TO EXPLORE</a>
     </section>
 
-    <section class="section skills" id="skills" aria-labelledby="skills-title">
-      <h2 id="skills-title">Skills</h2>
-      <ul class="chips">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Fetching data from APIs</li>
-        <li>Git and GitHub</li>
-        <li>Accessibility audits</li>
-        <li>Performance tuning</li>
-      </ul>
+    <section class="intro-strip">
+      <div class="strip-inner">
+        <span>DESIGN WITH PURPOSE</span><i>✦</i><span>BUILD WITH CURIOSITY</span><i>✦</i><span>LEARN BY DOING</span><i>✦</i><span>KEEP IMPROVING</span>
+      </div>
     </section>
-        <section class="section projects" id="projects" aria-labelledby="projects-title">
-      <h2 id="projects-title">Course projects</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>Cat Explorer</h3>
-          <p>Browse cat breeds with photos from TheCatAPI. I improved its mobile
-             Lighthouse performance score from 75 to the high 90s by lazy loading
-             and resizing images.</p>
-          <a href="https://ps8023724-sys.github.io/Web-programing-/week6/CatExplorer.html"
-             target="_blank" rel="noopener noreferrer">Open Cat Explorer</a>
-        </article>
 
-        <article class="card">
-          <h3>Web programming course site</h3>
-          <p>All my weekly assignments from weeks 1 to 9 in one place, from first
-             HTML exercises to API projects.</p>
-          <a href="https://ps8023724-sys.github.io/Web-programing-/"
-             target="_blank" rel="noopener noreferrer">Open course site</a>
+    <section class="section section-shell about-section" id="about">
+      <div class="section-heading">
+        <p class="section-kicker">01 / A LITTLE INTRODUCTION</p>
+        <h2>Getting to know <span class="serif-accent">me.</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-main">
+          <p class="about-statement">I'm interested in how technology can make everyday experiences <em>simpler, clearer, and more useful.</em></p>
+          <p>I'm studying Computer Engineering at Gachon University. Through my web programming coursework, I've been learning HTML, CSS, JavaScript, APIs, Git and GitHub, accessibility, and performance testing.</p>
+          <p>I enjoy the process of figuring things out: starting with a small idea, experimenting, finding what does not work, and improving it step by step. This portfolio is a record of that process and the projects I create along the way.</p>
+          <a class="text-link" href="#journey">See my learning journey <span aria-hidden="true">→</span></a>
+        </div>
+        <aside class="about-card">
+          <div class="about-card-top"><span class="mini-spark">✦</span><span>QUICK PROFILE</span></div>
+          <dl>
+            <div><dt>University</dt><dd>Gachon University</dd></div>
+            <div><dt>Major</dt><dd>Computer Engineering</dd></div>
+            <div><dt>Focus</dt><dd>Web development & user experience</dd></div>
+            <div><dt>Currently learning</dt><dd>JavaScript, APIs, Git workflows</dd></div>
+          </dl>
+          <div class="about-card-foot">One project at a time <span>♡</span></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="skills-section" id="skills">
+      <div class="section-shell">
+        <div class="section-heading light-heading">
+          <p class="section-kicker">02 / WHAT I'M LEARNING</p>
+          <h2>Tools in my <span class="serif-accent">toolkit.</span></h2>
+          <p class="section-description">A growing set of skills developed through class exercises and hands-on projects.</p>
+        </div>
+        <div class="skill-layout">
+          <div class="skill-tabs" role="tablist" aria-label="Skill categories">
+            <button class="skill-tab active" type="button" role="tab" aria-selected="true" data-skill="web">Web foundations</button>
+            <button class="skill-tab" type="button" role="tab" aria-selected="false" data-skill="logic">Programming</button>
+            <button class="skill-tab" type="button" role="tab" aria-selected="false" data-skill="workflow">Workflow & quality</button>
+          </div>
+          <div class="skill-panel" role="tabpanel" aria-live="polite">
+            <div class="skill-panel-heading"><span id="skill-panel-label">WEB FOUNDATIONS</span><span class="panel-index">01 — 03</span></div>
+            <div class="skill-chips" id="skill-chips">
+              <span>HTML5</span><span>CSS3</span><span>Responsive layouts</span><span>JavaScript</span><span>DOM manipulation</span>
+            </div>
+            <p id="skill-description">Building structured pages, styling responsive layouts, and adding interactive behavior to the browser.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-shell projects-section" id="projects">
+      <div class="section-heading projects-heading">
+        <div><p class="section-kicker">03 / SELECTED COURSEWORK</p><h2>Things I've <span class="serif-accent">worked on.</span></h2></div>
+        <p class="section-description">A selection of practical exercises and projects from my web programming studies.</p>
+      </div>
+      <div class="project-filters" role="group" aria-label="Filter projects">
+        <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All work <span>05</span></button>
+        <button class="filter-button" type="button" data-filter="web" aria-pressed="false">Web apps</button>
+        <button class="filter-button" type="button" data-filter="process" aria-pressed="false">Process & testing</button>
+        <button class="filter-button" type="button" data-filter="coursework" aria-pressed="false">Coursework</button>
+      </div>
+      <div class="project-grid">
+        <article class="project-card project-featured" data-category="web">
+          <div class="project-visual visual-cats"><span class="visual-label">API PROJECT</span><div class="visual-symbol">♡</div><div class="visual-caption">Whiskers<br><small>CAT BREED EXPLORER</small></div><span class="visual-corner">01</span></div>
+          <div class="project-content"><div class="project-meta"><span>WEB APPLICATION</span><span>WEEK 6</span></div><h3>Cat Explorer</h3><p>An interactive cat-breed explorer that retrieves breed information and photos using TheCatAPI. I later improved its loading behavior and image delivery.</p><div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>API</span></div><a class="project-link" href="https://ps8023724-sys.github.io/Web-programing-/week6/CatExplorer.html" target="_blank" rel="noopener noreferrer">Explore project <span>↗</span></a></div>
         </article>
+        <article class="project-card" data-category="web">
+          <div class="project-visual visual-books"><span class="visual-label">OPEN LIBRARY API</span><div class="book-stack"><i></i><i></i><i></i></div><div class="visual-caption">A world<br>of stories.</div><span class="visual-corner">02</span></div>
+          <div class="project-content"><div class="project-meta"><span>WEB APPLICATION</span><span>WEEK 7</span></div><h3>Open Library Book Finder</h3><p>A book discovery page that lets visitors search for books, authors, and topics through the Open Library service.</p><div class="tag-list"><span>JavaScript</span><span>Fetch API</span><span>JSON</span></div><a class="project-link" href="https://ps8023724-sys.github.io/Web-programing-/week7/Open%20Library.html" target="_blank" rel="noopener noreferrer">Explore project <span>↗</span></a></div>
+        </article>
+        <article class="project-card" data-category="process">
+          <div class="project-visual visual-speed"><span class="visual-label">LIGHTHOUSE REPORT</span><div class="speed-score">100<small>/100</small></div><div class="visual-caption">Faster, lighter,<br>better.</div><span class="visual-corner">03</span></div>
+          <div class="project-content"><div class="project-meta"><span>PERFORMANCE TESTING</span><span>WEEK 9</span></div><h3>Cat Explorer Performance Audit</h3><p>Investigated a slow Largest Contentful Paint, then tested lazy loading, preconnect hints, and resized WebP images. Final mobile runs scored 96 and 100.</p><div class="tag-list"><span>Lighthouse</span><span>Optimization</span><span>Accessibility mindset</span></div><a class="project-link" href="https://ps8023724-sys.github.io/Web-programing-/week9_2/Performance.html" target="_blank" rel="noopener noreferrer">Read audit <span>↗</span></a></div>
+        </article>
+        <article class="project-card" data-category="process">
+          <div class="project-visual visual-git"><span class="visual-label">VERSION CONTROL</span><div class="git-branch"><b></b><b></b><b></b><i></i></div><div class="visual-caption">Commit.<br>Branch. Merge.</div><span class="visual-corner">04</span></div>
+          <div class="project-content"><div class="project-meta"><span>GIT & GITHUB PRACTICE</span><span>WEEK 10</span></div><h3>Git & GitHub Activity</h3><p>Documented repository initialization, staging, commits, creating a feature branch, and merging the branch back into main with terminal output.</p><div class="tag-list"><span>Git</span><span>GitHub</span><span>Codespaces</span></div><a class="project-link" href="../Web-programing-/week10_1/git-assignment.html">View activity <span>↗</span></a></div>
+        </article>
+        <article class="project-card" data-category="coursework">
+          <div class="project-visual visual-course"><span class="visual-label">WEEKLY LEARNING LOG</span><div class="course-symbol">⌘</div><div class="visual-caption">Small steps.<br>Real progress.</div><span class="visual-corner">05</span></div>
+          <div class="project-content"><div class="project-meta"><span>COURSE PORTFOLIO</span><span>WEEKS 1–10</span></div><h3>Web Programming Coursework</h3><p>A collection of weekly class exercises, from foundational HTML and CSS to forms, APIs, accessibility, performance, and Git.</p><div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Coursework</span></div><a class="project-link" href="https://ps8023724-sys.github.io/Web-programing-/" target="_blank" rel="noopener noreferrer">Browse coursework <span>↗</span></a></div>
+        </article>
+      </div>
+      <p class="project-note"><span>✦</span> These are coursework projects and learning exercises. I am continuing to improve and expand them as I learn.</p>
+    </section>
+
+    <section class="journey-section" id="journey">
+      <div class="section-shell">
+        <div class="section-heading">
+          <p class="section-kicker">04 / THE PROCESS</p>
+          <h2>My learning <span class="serif-accent">journey.</span></h2>
+          <p class="section-description">A snapshot of the topics I've explored through my coursework so far.</p>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item"><span class="timeline-number">01</span><div><span class="timeline-label">FOUNDATIONS</span><h3>HTML & CSS</h3><p>Created structured web pages, navigation, layouts, and styled content.</p></div><span class="timeline-week">WEEKS 1–5</span></article>
+          <article class="timeline-item"><span class="timeline-number">02</span><div><span class="timeline-label">INTERACTIVITY</span><h3>JavaScript & APIs</h3><p>Worked with browser interactions, fetched external data, and built small web applications.</p></div><span class="timeline-week">WEEKS 6–7</span></article>
+          <article class="timeline-item"><span class="timeline-number">03</span><div><span class="timeline-label">BETTER EXPERIENCES</span><h3>Forms, accessibility & performance</h3><p>Practiced form validation and learned to evaluate accessibility and page speed.</p></div><span class="timeline-week">WEEKS 8–9</span></article>
+          <article class="timeline-item"><span class="timeline-number">04</span><div><span class="timeline-label">COLLABORATION & CONTROL</span><h3>Git and GitHub</h3><p>Practiced commits, branches, merges, and documenting a development workflow.</p></div><span class="timeline-week">WEEK 10</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="github-section section-shell">
+      <div class="github-card">
+        <div class="github-copy"><p class="section-kicker">05 / CODE & ACTIVITY</p><h2>Follow the work<br><span class="serif-accent">behind the pages.</span></h2><p>My repositories and commit history show how my projects develop over time—not just the finished pages.</p><div class="github-actions"><a class="button button-primary" href="https://github.com/ps8023724-sys" target="_blank" rel="noopener noreferrer">My GitHub profile ↗</a><a class="text-link" href="https://github.com/ps8023724-sys/portfolio/commits/main/" target="_blank" rel="noopener noreferrer">Portfolio commit history →</a></div></div>
+        <div class="terminal-card" aria-label="Example Git command sequence"><div class="terminal-top"><span></span><span></span><span></span><small>puja@codespaces ~</small></div><div class="terminal-body"><p><i>$</i> git status</p><p class="terminal-muted">On branch main</p><p><i>$</i> git checkout -b feature-style</p><p class="terminal-success">Switched to a new branch 'feature-style'</p><p><i>$</i> git merge feature-style</p><p class="terminal-success">Fast-forward · style.css added</p><div class="terminal-cursor">▌</div></div></div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="section-shell contact-inner">
+        <p class="section-kicker">06 / SAY HELLO</p>
+        <h2>Thanks for stopping by.<br><span class="serif-accent">Let's stay connected.</span></h2>
+        <p>This portfolio will keep growing as I learn, experiment, and build new things.</p>
+        <div class="contact-links"><a href="https://github.com/ps8023724-sys" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a><a href="mailto:puja.shrestha@example.com">Email <span>↗</span></a></div>
+        <p class="email-note">Replace the example email address with the email you want to publish before deploying.</p>
       </div>
     </section>
   </main>
-    <footer class="site-footer">
-    <p>Shrestha Puja &middot; Computer Engineering, Gachon University &middot; 2026</p>
-  </footer>
+
+  <footer class="site-footer"><a class="brand footer-brand" href="#home"><span class="brand-mark">P.</span><span>shrestha puja</span></a><p>Designed and built as a learning portfolio · 2026</p><a href="#home" class="back-top">Back to top ↑</a></footer>
 </body>
 </html>
