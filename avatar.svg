@@ -1,1 +1,7 @@
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Avatar with the initials SP">
+  <circle cx="200" cy="200" r="195" fill="#F5A623"/>
+  <circle cx="200" cy="200" r="160" fill="#2F4A38"/>
+  <text x="200" y="245" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="140" font-weight="700" fill="#F4EDE0">SP</text>
+  <path d="M330 70 L340 100 L370 110 L340 120 L330 150 L320 120 L290 110 L320 100 Z" fill="#E8573A"/>
+  <path d="M70 300 L76 318 L94 324 L76 330 L70 348 L64 330 L46 324 L64 318 Z" fill="#F4EDE0"/>
+</svg>
