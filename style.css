@@ -1,1 +1,32 @@
+:root {
+  --green: #2F4A38;
+  --cream: #F4EDE0;
+  --mustard: #F5A623;
+  --orange: #E8573A;
+  --black: #161616;
+}
 
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--black);
+  font: 18px/1.7 Arial, sans-serif;
+}
+
+h1, h2, h3 { font-family: Georgia, "Times New Roman", serif; line-height: 1.15; }
+
+a:focus-visible, button:focus-visible {
+  outline: 3px solid var(--black);
+  box-shadow: 0 0 0 6px var(--mustard);
+}
+
+.skip-link {
+  position: absolute; left: 12px; top: -60px;
+  background: var(--black); color: var(--cream); padding: 10px 16px;
+}
+.skip-link:focus { top: 12px; }
+
+.section { padding: 70px 6%; }
+.section h2 { font-size: 2.2rem; margin: 0 0 20px; }
